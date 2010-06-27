@@ -1,0 +1,73 @@
+WebGL Crash Course
+- Go to http://github.com/fintler/WebGL-Presentation for code.
+
+Who are you?
+- Someone who's comfortable with JavaScript and C.
+- Someone who knows the basics of matrices and vectors.
+
+Who am I?
+- Someone who barely knows anything about WebGL and OpenGL.
+- Someone who is probably going to tell you at least one incorrect thing today.
+- Jon Bringhurst <jon@bringhurst.org>
+
+What is OpenGL?
+- Open Graphics Library.
+- So you can write code that runs on different video cards.
+- The program you write is a "client", the video card is a "server".
+- To help you fight with matrix math.
+
+What is OpenGL ES?
+- Open Graphics Library for Embedded Systems.
+- The best or most useful parts of the full OpenGL spec.
+- Generally only one way to do everything.
+
+What is WebGL?
+- The JavaScript way to use OpenGL ES (2.0).
+- Uses the webgl context of a <canvas> element.
+- Awesome.
+
+High level -- how to use WebGL?
+- Do the following in order from 1 to 6.
+  - Step 1: Create and setup two programs that run on the video card.
+  - Step 2: Send camera information to the first program (vertex shader).
+  - Step 3: Send shape (vertex) information to the first program.
+  - Step 4: Send color (fragment) information to the second program.
+  - Step 5: Tell the video card to draw the stuff you sent it.
+  - Step 6: Go to step 1.
+
+Programs that run on the video card?
+- Called "shaders".
+- We only worry about "vertex" (points in 3d space) and "fragment" (color).
+- Written in a C-like language known as GLSL.
+- Write your shader in a <script> tag, then get it with innerHTML or whatever.
+
+Compile and send it to the video card.
+- Compile example.
+- Send to video card example.
+
+Send camera information.
+- Send camera information example.
+
+Send shape information.
+- Send shape information example.
+
+Rasterization
+- Linear interpolation between vertices to create fragments.
+- The invisible step between your vertex and fragment shader.
+
+Send color information
+- Send color information example.
+
+Overview of the pipeline
+- All of the stuff that happens behind the scenes.
+- Important to know, but only after you get the basics down.
+
+Now tell the video card to run through the pipeline
+- Example of drawing.
+- Show the output.
+
+Useful links and libraries
+- WebGLU.
+- "Learning WebGL" series.
+
+End
